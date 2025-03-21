@@ -83,8 +83,8 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
     for (var i = 0; i < grades.length; i++) {
       div.innerHTML +=
-        '<i style="background:' + colors[i] + '"></i> ' +
-        grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+        '<div><i style="background:' + colors[i] + '; width: 15px; height: 15px; display: inline-block; margin-right: 5px;"></i> ' +
+        grades[i] + (grades[i + 1] ? '–' + grades[i + 1] + '</div>' : '+');
     }
     return div;
   };
